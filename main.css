@@ -117,6 +117,7 @@ body.preloader-site {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 120px;
+    text-align: center;
 }
 
 .cover {
