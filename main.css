@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Flama Book';
-    src: url('assets/fonts/Flama-Book.woff2') format('woff2'),
-        url('assets/fonts/Flama-Book.woff') format('woff');
+    src: url('fonts/Flama-Book.woff2') format('woff2'),
+        url('fonts/Flama-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Flama';
-    src: url('assets/fonts/Flama-Bold.woff2') format('woff2'),
-        url('assets/fonts/Flama-Bold.woff') format('woff');
+    src: url('fonts/Flama-Bold.woff2') format('woff2'),
+        url('fonts/Flama-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'United Sans SmCd Bk';
-    src: url('assets/fonts/UnitedSansSemiCond-Black.woff2') format('woff2'),
-        url('assets/fonts/UnitedSansSemiCond-Black.woff') format('woff');
+    src: url('fonts/UnitedSansSemiCond-Black.woff2') format('woff2'),
+        url('fonts/UnitedSansSemiCond-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'United Italic Rg Bd';
-    src: url('assets/fonts/UnitedItalicReg-Bold.woff2') format('woff2'),
-        url('assets/fonts/UnitedItalicReg-Bold.woff') format('woff');
+    src: url('fonts/UnitedItalicReg-Bold.woff2') format('woff2'),
+        url('fonts/UnitedItalicReg-Bold.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
