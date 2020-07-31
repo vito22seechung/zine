@@ -41,6 +41,9 @@ body {
     font-size: 1em;
 }
 
+a, a:link, a:visited, a:active, a:hover { color: #000; text-decoration: none; }
+.bg-black a, .bg-black a:link, .bg-black a:visited, .bg-black a:hover, .bg-black a:active { color: #fff; text-decoration: none; }
+
 h2 {
     font-family: 'United Sans SmCd Bk', sans-serif;
     font-weight: 900;
@@ -93,22 +96,27 @@ figure { margin: 1em; }
 
 /* page sections */
 
-.main-preloader {
-    position: fixed;
-    z-index: 9;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
+body.preloader-site {
+    overflow: hidden;
 }
 
-.preloader-percentage {
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    width: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120px;
 }
 
 .cover {
@@ -340,11 +348,24 @@ ul.links {
     margin: 0;
 }
 
+ul.links .social {
+    height: 2rem;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
     .nikkorms-grid, .allyn-grid { display: block; }
     .allyn-grid-copy { column-count: 1; }
     .photogrid-3 { position: sticky; top: 3rem; }
+    ul.links { display: block; }
+    ul.links li { display: block; padding: 2rem 0; text-align: center; }
+}
+
+@media (max-width: 991px) {
+    ul.links { display: block; }
+    ul.links li { display: block; padding: 2rem 0; text-align: center; }
 }
 
 /* Landscape phones and portrait tablets */
@@ -353,6 +374,7 @@ ul.links {
     h3 { font-size: 1.75em; }
     .nikkorms-grid, .allyn-grid { display: block; }
     .allyn-grid-copy { column-count: 1; }
-    .p-5 { padding: 1rem !important; } /* pls create a separate class for this */
-    ul.links { display: block; text-align: center; }
+    .p-5 { padding: 1rem !important; } /* !!! */
+    ul.links { display: block; }
+    ul.links li { display: block; padding: 2rem 0; text-align: center; }
 }
